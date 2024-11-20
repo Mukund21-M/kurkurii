@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kurkura</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 15%;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #ff6f61;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ff3f31;
+            transform: scale(1.05);
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, My Kurkura! 🎉</h1>
+    <p>To my dearest Kurkura,<br>
+        You light up my world like nobody else. Here's to a day as special as you!<br>
+        Love, Vedu ❤️
+    </p>
+    <button onclick="playMusic()">Play Our Song</button>
+    <audio id="song" src="https://drive.google.com/uc?export=download&id=1G0UfpXgA2KJuweBNCyGlRjPP72d8ELWc"></audio>
+    <script>
+        function playMusic() {
+            const audio = document.getElementById('song');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
